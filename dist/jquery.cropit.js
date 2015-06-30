@@ -237,6 +237,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var _this = this;
 
 	      this.image = new Image();
+			this.image.crossOrigin = "Anonymous";
+
 	      this.preImage = new Image();
 	      this.image.onload = this.onImageLoaded.bind(this);
 	      this.preImage.onload = this.onPreImageLoaded.bind(this);
